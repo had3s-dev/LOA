@@ -1,22 +1,21 @@
-/* Jellyfish Netflix Theme */
+/* Jellyfish Library of Alexandria Theme */
 :root {
-    --primary-r: 220;
-    --primary-g: 20;
-    --primary-b: 60;
+    --primary-r: 184;
+    --primary-g: 134;
+    --primary-b: 11;
     --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
     --secondary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.6);
     --primary-background-transparent: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.1);
     --secondary-background-transparent: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.2);
-    --primary-background-color: #000000; /* Main background */
-    --secondary-background-color: #181818; /* Drawer, cards, dialogs */
-    --tertiary-background-color: #252525; /* Popovers */
-    --alt-accent-color: #ffffff20;
-    --text-color: #000000;
-    --header-background-color: #ffffff6e; /* This is header and tabs background */
+    --primary-background-color: #1a1612; /* Rich dark brown - ancient wood */
+    --secondary-background-color: #2d2419; /* Warm aged parchment dark */
+    --tertiary-background-color: #3d3026; /* Deeper warm brown */
+    --alt-accent-color: #b8860b20;
+    --text-color: #f4e4c1;
+    --header-background-color: #2d241980; /* Translucent warm tone */
     --logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
     --background-image: url(https://cdn.jsdelivr.net/gh/n00bcodr/Jellyfish/colors/images/jellyflix.jpg);
-    --footer-message: "🍿 Jellyflix and Chill?";
-
+    --footer-message: "📚 Knowledge Awaits";
     /* Alternate accents*/
     --primary-alt1: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 1);
     --primary-alt2: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.85);
@@ -24,19 +23,15 @@
     --primary-alt4: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.55);
     --primary-alt5: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.4);
 }
-
 .pageTitleWithDefaultLogo {
     background-size: 100% !important;
 }
-
 .layout-mobile .pageTitleWithDefaultLogo {
     width: 130px !important;
 }
-
 #loginPage .visualLoginForm:not(.hide) h1::before {
   background-size: 50% !important;
 }
-
 #loginPage .manualLoginForm:not(.hide) h1.sectionTitle::before {
   background-size: 100% !important;
 }
