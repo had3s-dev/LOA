@@ -1,0 +1,6 @@
+/* Nexus Remains — Logo Override */
+/* SIMPLE LOGO FILE — no styling, only sets the logo var */
+
+:root {
+    --logo: url("https://i.ibb.co/kfy5rGF/The-Archive-removebg-preview.png");
+}

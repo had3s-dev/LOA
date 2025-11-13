@@ -1,0 +1,39 @@
+/* Nexus Remains — Library of Alexandria Theme */
+/* SIMPLE THEME FILE — Just like coal/coral/grass */
+
+:root {
+    /* Primary Library Bronze */
+    --primary-r: 201;
+    --primary-g: 162;
+    --primary-b: 39;
+    --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
+    --secondary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.6);
+
+    /* Background palette */
+    --primary-background-color: #FDF6E3;    /* Parchment */
+    --secondary-background-color: #EBD9B0;  /* Desert Sand */
+    --tertiary-background-color: #E0CE9F;   /* Aged papyrus */
+
+    --primary-background-transparent: rgba(253, 246, 227, 0.10);
+    --secondary-background-transparent: rgba(253, 246, 227, 0.18);
+
+    /* Text */
+    --text-color: #1A1A1A;
+    --alt-accent-color: #C9A22740;
+
+    /* Header */
+    --header-background-color: #EBD9B0EE;
+
+    /* Optional parchment background texture */
+    --background-image: url("https://i.ibb.co/QH44SLr/parchment-texture.jpg");
+
+    /* Footer message */
+    --footer-message: "📜 Preserving knowledge, one stream at a time.";
+
+    /* Alternate bronze shades — keeps Jellyfish animations consistent */
+    --primary-alt1: rgba(171, 132, 9, 1);
+    --primary-alt2: rgba(171, 132, 9, 0.85);
+    --primary-alt3: rgba(171, 132, 9, 0.7);
+    --primary-alt4: rgba(171, 132, 9, 0.55);
+    --primary-alt5: rgba(171, 132, 9, 0.4);
+}
