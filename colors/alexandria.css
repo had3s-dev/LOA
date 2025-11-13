@@ -1,32 +1,49 @@
-/* Jellyfish "Alexandria" Theme – Library of Alexandria Palette */
+/* ============================
+   LOA COLOR PALETTE OVERRIDES
+   ============================ */
+
 :root {
-    --primary-r: 201;
-    --primary-g: 162;
-    --primary-b: 39;
-    --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
-    --secondary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.6);
+    /* ✨ Primary Alexandria colors */
+    --primary-background-color: #faf3dd !important;       /* Papyrus */
+    --secondary-background-color: #f2e8c9 !important;     /* Light parchment */
+    --primary-background-transparent: rgba(250,243,221,0.7) !important;
+    --secondary-background-transparent: rgba(242,232,201,.55) !important;
 
-    /* Parchment text on dark library background (good contrast) */
-    --primary-background-transparent: rgba(15, 11, 7, 0.85);  /* deep ink shadow */
-    --secondary-background-transparent: rgba(15, 11, 7, 0.92);
+    /* ✨ Gold accents */
+    --primary-accent-color: #caa64a !important;  /* Bright gold */
+    --secondary-accent-color: #8f6b28 !important; /* Antique gold */
 
-    --primary-background-color: #120E09;   /* main background – dark, warm brown */
-    --secondary-background-color: #1F1911; /* drawers, cards, dialogs */
-    --tertiary-background-color: #2A2115;  /* popovers, menus */
+    /* ✨ Neutral text */
+    --text-color: #241c12 !important; /* Dark ink */
+    --alt-accent-color: rgba(60,48,30,0.35) !important; /* low-contrast ink */
 
-    --alt-accent-color: #C9A22733;         /* subtle bronze glow */
-    --text-color: #FDF6E3;                 /* parchment text for maximum readability */
-    --header-background-color: #1B150EE6;  /* header/tabs background, slightly lighter than body */
+    /* Header background for buttons */
+    --header-background-color: rgba(240,228,195,0.65) !important;
+}
 
-    /* OPTIONAL: background image – you can swap this for your own papyrus texture later */
-    --background-image: url(https://cdn.jsdelivr.net/gh/had3s-dev/LOA@main/colors/images/coal.jpg);
+/* Make sidebar items visible */
+.navMenuOption,
+.navMenuOption .navMenuOptionText,
+.navMenuOptionIcon {
+    color: #3a2f1f !important;
+    text-shadow: none !important;
+}
 
-    --footer-message: "📜 The Archive – Illuminating stories in the Library of Alexandria.";
+/* Highlight selected item */
+.navMenuOption-selected {
+    background: #caa64a !important;
+    color: #fff !important;
+}
 
-    /* Alternate accents – used by Jellyfish for gradients & highlights */
-    --primary-alt1: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 1);
-    --primary-alt2: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.85);
-    --primary-alt3: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.7);
-    --primary-alt4: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.55);
-    --primary-alt5: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.4);
+/* Header tabs / buttons */
+.headerTabs,
+.headerRight {
+    background: rgba(255,248,230,0.85) !important;
+    color: #3a2f1f !important;
+}
+
+/* Better header buttons contrast */
+.headerTabs .emby-button-foreground,
+.headerRight .paper-icon-button-light {
+    color: #3a2f1f !important;
 }
