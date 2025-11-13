@@ -1,23 +1,17 @@
 /* ============================================================
-   FULL STREAMBERRY LOGO REPLACEMENT FOR JELLYFIN + JELLYFISH
-   Replaces: header logo, login logo, mobile logo, page titles,
-   AND the new Jellyfin splash/loading logo (10.10+)
+   FULL CUSTOM LOGO REPLACEMENT FOR JELLYFIN + JELLYFISH
+   Using user logo: https://i.ibb.co/N6MTzqhW/mcoud-1.png
    ============================================================ */
 
 :root {
-    /* General logo (header, many components use this) */
-    --logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
-
-    /* Login page override */
-    --login-logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
-
-    /* Some themes still query this */
-    --emby-logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
+    --logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png");
+    --login-logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png");
+    --emby-logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png");
 }
 
-/* ------------ PAGE TITLE LOGO (used across Jellyfish) ------------ */
+/* ------------ PAGE TITLE LOGOS (Jellyfish uses this) ------------ */
 .pageTitleWithDefaultLogo {
-    background-image: url("https://i.ibb.co/h1gxW5jg/streamberry.png") !important;
+    background-image: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
     background-size: 100% !important;
 }
 .layout-mobile .pageTitleWithDefaultLogo {
@@ -27,18 +21,20 @@
 /* ------------ LOGIN SCREEN OVERRIDES ------------ */
 #loginPage .visualLoginForm:not(.hide) h1::before,
 #loginPage .manualLoginForm:not(.hide) h1.sectionTitle::before {
-    background-image: url("https://i.ibb.co/h1gxW5jg/streamberry.png") !important;
+    background-image: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
 }
 
 /* ============================================================
-   10.10+ SPLASH SCREEN (LOADING LOGO) — THIS IS THE IMPORTANT ONE
+   ✔ 10.10+ / 10.11+ LOADING SPLASH LOGO OVERRIDE (THE IMPORTANT PART)
    ============================================================ */
 
-/* Replace splash screen logo */
-#splashscreen .splashLogo {
-    background-image: url("https://i.ibb.co/h1gxW5jg/streamberry.png") !important;
+/* Replace the splashscreen graphic */
+#splashscreen .splashLogo,
+div.splashLogo,
+.splashLogo {
+    background-image: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -48,7 +44,19 @@
     opacity: 1 !important;
 }
 
-/* Hide default triangle SVG */
-#splashscreen svg {
+/* Hide BOTH default Jellyfin SVGs (new in 10.11 injects 2!) */
+#splashscreen svg,
+#splashscreen .splash svg,
+.splashscreenLogo,
+#loadingScreen svg {
     display: none !important;
+}
+
+/* Jellyfin sometimes loads this fallback: nuke it too */
+#splashscreen .loadingLogo,
+.loadingLogo {
+    background-image: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    opacity: 1 !important;
 }
