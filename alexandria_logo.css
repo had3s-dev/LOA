@@ -1,6 +1,12 @@
-/* Nexus Remains — Logo Override */
-/* SIMPLE LOGO FILE — no styling, only sets the logo var */
+/* Nexus Remains — Splash & Loading Logo Override */
 
 :root {
-    --logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png");
+    /* Loading (splash) logo */
+    --splash-image: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
+
+    /* Header logo (top-left) */
+    --logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
+
+    /* Login screen logo */
+    --login-logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
 }
