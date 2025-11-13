@@ -1,50 +1,37 @@
-/* ===========================================
-   Library of Alexandria Color Theme (LOA)
-   OG Jellyfish variable structure
-   =========================================== */
-
+/* Jellyfish Library of Alexandria Theme */
 :root {
-    /* BRAND COLORS */
-    --accent-color: #C9A227;
-    --accent-color-light: #E5C76D;
-    --accent-color-dark: #8A6F1C;
-
-    /* BACKGROUND PALETTE (Parchment) */
-    --primary-background-color: #F7F1DD;
-    --secondary-background-color: #EFE6C8;
-    --tertiary-background-color: #E6D9B4;
-    --primary-background-transparent: rgba(247,241,221,0.7);
-    --secondary-background-transparent: rgba(239,230,200,0.45);
-
-    /* TEXT + ICON COLORS (FIX VISIBILITY) */
-    --text-color: #1A1A1A;
-    --emby-text-color: #1A1A1A;
-    --default-icon-color: #1A1A1A;
-    --navMenuOptionText: #1A1A1A;
-    --navMenuOptionIcon: #1A1A1A;
-    --paper-listbox-color: #1A1A1A;
-    --play-back-icon-color: #1A1A1A;
-
-    /* BUTTON COLORS */
-    --button-background-color: #EFE6C8;
-    --button-text-color: #2C241A;
-    --button-hover-background-color: #E5D9B4;
-    --button-border-color: #C9A22766;
-
-    /* TAB / HEADER BAR */
-    --header-background-color: rgba(246,239,220,0.7);
-
-    /* GOLD HIGHLIGHT ALTS */
-    --alt-accent-color: rgba(201,162,39,0.25);
-    --primary-alt1: #B18C26;
-    --primary-alt2: #9A7A21;
-    --primary-alt3: #83661C;
-    --primary-alt4: #6C5217;
-    --primary-alt5: #563F12;
-
-    /* BACKGROUND IMAGE (optional) */
-    --background-image: none;
-
-    /* FOOTER MESSAGE */
-    --footer-message: "📜 The Archive – Knowledge Preserved Through Time.";
+    --primary-r: 218;
+    --primary-g: 165;
+    --primary-b: 32;
+    --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
+    --secondary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.6);
+    --primary-background-transparent: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.1);
+    --secondary-background-transparent: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.2);
+    --primary-background-color: #1c1410; /* Warm deep mahogany */
+    --secondary-background-color: #2a1f18; /* Rich amber-brown */
+    --tertiary-background-color: #3a2d20; /* Honey-touched wood */
+    --alt-accent-color: #daa52020;
+    --text-color: #0d0805;
+    --header-background-color: #2a1f1888; /* Warm translucent glow */
+    --logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
+    --background-image: url(https://cdn.jsdelivr.net/gh/n00bcodr/Jellyfish/colors/images/jellyflix.jpg);
+    --footer-message: "✨ Knowledge Illuminated";
+    /* Alternate accents*/
+    --primary-alt1: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 1);
+    --primary-alt2: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.85);
+    --primary-alt3: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.7);
+    --primary-alt4: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.55);
+    --primary-alt5: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.4);
+}
+.pageTitleWithDefaultLogo {
+    background-size: 100% !important;
+}
+.layout-mobile .pageTitleWithDefaultLogo {
+    width: 130px !important;
+}
+#loginPage .visualLoginForm:not(.hide) h1::before {
+  background-size: 50% !important;
+}
+#loginPage .manualLoginForm:not(.hide) h1.sectionTitle::before {
+  background-size: 100% !important;
 }
