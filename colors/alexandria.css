@@ -17,13 +17,13 @@
     --secondary-background-transparent: rgba(239,230,200,0.45);
 
     /* TEXT + ICON COLORS (FIX VISIBILITY) */
-    --text-color: #2C241A;
-    --emby-text-color: #2C241A;
-    --default-icon-color: #2C241A;
-    --navMenuOptionText: #2C241A;
-    --navMenuOptionIcon: #2C241A;
-    --paper-listbox-color: #2C241A;
-    --play-back-icon-color: #2C241A;
+    --text-color: #1A1A1A;
+    --emby-text-color: #1A1A1A;
+    --default-icon-color: #1A1A1A;
+    --navMenuOptionText: #1A1A1A;
+    --navMenuOptionIcon: #1A1A1A;
+    --paper-listbox-color: #1A1A1A;
+    --play-back-icon-color: #1A1A1A;
 
     /* BUTTON COLORS */
     --button-background-color: #EFE6C8;
