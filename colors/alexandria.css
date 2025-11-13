@@ -1,49 +1,50 @@
-/* ============================
-   LOA COLOR PALETTE OVERRIDES
-   ============================ */
+/* ===========================================
+   Library of Alexandria Color Theme (LOA)
+   OG Jellyfish variable structure
+   =========================================== */
 
 :root {
-    /* ✨ Primary Alexandria colors */
-    --primary-background-color: #faf3dd !important;       /* Papyrus */
-    --secondary-background-color: #f2e8c9 !important;     /* Light parchment */
-    --primary-background-transparent: rgba(250,243,221,0.7) !important;
-    --secondary-background-transparent: rgba(242,232,201,.55) !important;
+    /* BRAND COLORS */
+    --accent-color: #C9A227;
+    --accent-color-light: #E5C76D;
+    --accent-color-dark: #8A6F1C;
 
-    /* ✨ Gold accents */
-    --primary-accent-color: #caa64a !important;  /* Bright gold */
-    --secondary-accent-color: #8f6b28 !important; /* Antique gold */
+    /* BACKGROUND PALETTE (Parchment) */
+    --primary-background-color: #F7F1DD;
+    --secondary-background-color: #EFE6C8;
+    --tertiary-background-color: #E6D9B4;
+    --primary-background-transparent: rgba(247,241,221,0.7);
+    --secondary-background-transparent: rgba(239,230,200,0.45);
 
-    /* ✨ Neutral text */
-    --text-color: #241c12 !important; /* Dark ink */
-    --alt-accent-color: rgba(60,48,30,0.35) !important; /* low-contrast ink */
+    /* TEXT + ICON COLORS (FIX VISIBILITY) */
+    --text-color: #2C241A;
+    --emby-text-color: #2C241A;
+    --default-icon-color: #2C241A;
+    --navMenuOptionText: #2C241A;
+    --navMenuOptionIcon: #2C241A;
+    --paper-listbox-color: #2C241A;
+    --play-back-icon-color: #2C241A;
 
-    /* Header background for buttons */
-    --header-background-color: rgba(240,228,195,0.65) !important;
-}
+    /* BUTTON COLORS */
+    --button-background-color: #EFE6C8;
+    --button-text-color: #2C241A;
+    --button-hover-background-color: #E5D9B4;
+    --button-border-color: #C9A22766;
 
-/* Make sidebar items visible */
-.navMenuOption,
-.navMenuOption .navMenuOptionText,
-.navMenuOptionIcon {
-    color: #3a2f1f !important;
-    text-shadow: none !important;
-}
+    /* TAB / HEADER BAR */
+    --header-background-color: rgba(246,239,220,0.7);
 
-/* Highlight selected item */
-.navMenuOption-selected {
-    background: #caa64a !important;
-    color: #fff !important;
-}
+    /* GOLD HIGHLIGHT ALTS */
+    --alt-accent-color: rgba(201,162,39,0.25);
+    --primary-alt1: #B18C26;
+    --primary-alt2: #9A7A21;
+    --primary-alt3: #83661C;
+    --primary-alt4: #6C5217;
+    --primary-alt5: #563F12;
 
-/* Header tabs / buttons */
-.headerTabs,
-.headerRight {
-    background: rgba(255,248,230,0.85) !important;
-    color: #3a2f1f !important;
-}
+    /* BACKGROUND IMAGE (optional) */
+    --background-image: none;
 
-/* Better header buttons contrast */
-.headerTabs .emby-button-foreground,
-.headerRight .paper-icon-button-light {
-    color: #3a2f1f !important;
+    /* FOOTER MESSAGE */
+    --footer-message: "📜 The Archive – Knowledge Preserved Through Time.";
 }
