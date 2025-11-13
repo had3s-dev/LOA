@@ -1,21 +1,21 @@
 /* Jellyfish Library of Alexandria Theme */
 :root {
-    --primary-r: 212;
-    --primary-g: 175;
-    --primary-b: 55;
+    --primary-r: 34;
+    --primary-g: 139;
+    --primary-b: 34;
     --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
     --secondary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.6);
     --primary-background-transparent: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.1);
     --secondary-background-transparent: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.2);
-    --primary-background-color: #0f0f0f; /* Clean dark background */
-    --secondary-background-color: #1a1a1a; /* Lighter cards */
-    --tertiary-background-color: #242424; /* Popovers */
-    --alt-accent-color: #d4af3720;
-    --text-color: #1a1410;
-    --header-background-color: #1a1a1a90; /* Clean translucent */
+    --primary-background-color: #0d1b0d; /* Deep forest green-black */
+    --secondary-background-color: #1a2e1a; /* Living moss green */
+    --tertiary-background-color: #253e25; /* Garden green */
+    --alt-accent-color: #228b2220;
+    --text-color: #0a2f0a;
+    --header-background-color: #1a2e1a85; /* Verdant translucent */
     --logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
     --background-image: url(https://cdn.jsdelivr.net/gh/n00bcodr/Jellyfish/colors/images/jellyflix.jpg);
-    --footer-message: "📚 Knowledge Awaits";
+    --footer-message: "🌿 A Living Library Awaits";
     /* Alternate accents*/
     --primary-alt1: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 1);
     --primary-alt2: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.85);
