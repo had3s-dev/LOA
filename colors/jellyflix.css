@@ -10,9 +10,9 @@
     --primary-background-color: #0a0806; /* Deep warm black */
     --secondary-background-color: #1a1410; /* Warm dark wood */
     --tertiary-background-color: #2a1f18; /* Rich amber-brown */
-    --alt-accent-color: #daa52030;
-    --text-color: #0d0805;
-    --header-background-color: #1a141070; /* Warm translucent */
+    --alt-accent-color: #2a1f1880;
+    --text-color: #e8d4b0;
+    --header-background-color: #1a1410a0; /* Warm dark wood translucent */
     --logo: url("https://i.ibb.co/TqBxLXTx/jfish.png");
     --background-image: url(https://cdn.jsdelivr.net/gh/n00bcodr/Jellyfish/colors/images/peach.jpg);
     --footer-message: "✨ Discover Ancient Wisdom";
