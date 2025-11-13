@@ -1,12 +1,54 @@
-/* Nexus Remains — Splash & Loading Logo Override */
+/* ============================================================
+   FULL STREAMBERRY LOGO REPLACEMENT FOR JELLYFIN + JELLYFISH
+   Replaces: header logo, login logo, mobile logo, page titles,
+   AND the new Jellyfin splash/loading logo (10.10+)
+   ============================================================ */
 
 :root {
-    /* Loading (splash) logo */
-    --splash-image: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
+    /* General logo (header, many components use this) */
+    --logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
 
-    /* Header logo (top-left) */
-    --logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
+    /* Login page override */
+    --login-logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
 
-    /* Login screen logo */
-    --login-logo: url("https://i.ibb.co/N6MTzqhW/mcoud-1.png") !important;
+    /* Some themes still query this */
+    --emby-logo: url("https://i.ibb.co/h1gxW5jg/streamberry.png");
+}
+
+/* ------------ PAGE TITLE LOGO (used across Jellyfish) ------------ */
+.pageTitleWithDefaultLogo {
+    background-image: url("https://i.ibb.co/h1gxW5jg/streamberry.png") !important;
+    background-size: 100% !important;
+}
+.layout-mobile .pageTitleWithDefaultLogo {
+    width: 130px !important;
+}
+
+/* ------------ LOGIN SCREEN OVERRIDES ------------ */
+#loginPage .visualLoginForm:not(.hide) h1::before,
+#loginPage .manualLoginForm:not(.hide) h1.sectionTitle::before {
+    background-image: url("https://i.ibb.co/h1gxW5jg/streamberry.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+/* ============================================================
+   10.10+ SPLASH SCREEN (LOADING LOGO) — THIS IS THE IMPORTANT ONE
+   ============================================================ */
+
+/* Replace splash screen logo */
+#splashscreen .splashLogo {
+    background-image: url("https://i.ibb.co/h1gxW5jg/streamberry.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+
+    width: 240px !important;
+    height: 240px !important;
+    opacity: 1 !important;
+}
+
+/* Hide default triangle SVG */
+#splashscreen svg {
+    display: none !important;
 }
